@@ -1,0 +1,30 @@
+Sarah A. Rivera Ruiz
+Proyecto Final: API REST de Gestion de Tareas 
+COMP2052.WEB DEV SERVER SIDE (BACK-END)
+
+## Objetivo
+Desarrollar una API REST que permita a los usuarios gestionar tareas (to-do list), aplicando conceptos
+fundamentales de desarrollo back-end: rutas, base de datos, autenticación, validación y estructura de
+proyecto.
+
+## Funcionalidades
+- Registro e inicio de sesion de usuarios 
+- Crear, leer, actualizar y eliminar tareas
+- Filtrar tareas por estado y fecha de vencimiento 
+- Validacion de datos
+- Manejo de errores con respuestas claras en JSON
+
+## Endpoints
+- POST /api/auth/register -> para crear una nueva cuenta
+- POST /api/auth/login -> para iniciar una sesion
+- POST /api/tasks -> para encontrar todas las tareas del usuario
+- GET /api/tasks/:id -> para encontrar una tarea especifica del usuario
+- PUT /api/tasks/:id -> para modificar una tarea 
+- DELETE /api/tasks/:id -> para borrar una tarea
+
+## Tecnologias Utilizadas
+- Node.js
+- Express.js
+- MySQL
+- JWT (JSON Web Tokens)
+- bcrypt
