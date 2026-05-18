@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #2D336B, #535D99, #A9B5DF );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lora', Georgia, serif;
+    background:
+        /* Large stars */
+        radial-gradient(circle at 10% 15%, rgba(255,255,255,0.7) 2px, transparent 3px),
+        radial-gradient(circle at 25% 80%, rgba(255,255,255,0.6) 2px, transparent 3px),
+        radial-gradient(circle at 75% 25%, rgba(255,255,255,0.7) 2px, transparent 3px),
+        radial-gradient(circle at 70% 70%, rgba(255,255,255,0.6) 2px, transparent 3px),
+
+        /* Medium stars */
+        radial-gradient(circle at 15% 40%, rgba(255,255,255,0.5) 1.5px, transparent 2px),
+        radial-gradient(circle at 50% 10%, rgba(255,255,255,0.4) 1.5px, transparent 2px),
+        radial-gradient(circle at 35% 20%, rgba(255,255,255,0.4) 1.5px, transparent 2px),
+        radial-gradient(circle at 80% 10%, rgba(255,255,255,0.5) 1.5px, transparent 2px),
+        radial-gradient(circle at 85% 60%, rgba(255,255,255,0.4) 1.5px, transparent 2px),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.5) 1.5px, transparent 2px),
+
+        /* Small stars */
+        radial-gradient(circle at 40% 5%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 65% 15%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 95% 20%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 30% 50%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 5% 60%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 40% 85%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 65% 35%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 75% 90%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 90% 45%, rgba(255,255,255,0.4) 1px, transparent 2px),
+        radial-gradient(circle at 55% 75%, rgba(255,255,255,0.3) 1px, transparent 2px),
+
+        /* Gradient background */
+        linear-gradient(to bottom, #2D336B, #535D99, #A9B5DF);
+}
+
+.auth-screen {
+    position: relative;
+    z-index: 1;
+    background: #2e345f;
+    text-align: center;
+    padding: 28px 32px 28px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 16px;
+}
+
+/*---- Logo ----*/
+.logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: rgb(194, 214, 249);
+    margin-bottom: 12px;
+    text-shadow: 0 0 24px rgba(194, 214, 249, 0.25);
+}
+
+/*---- Agreement Text ----*/
+.reg-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: rgba(194, 214, 249, 0.5);
+    margin-bottom: 2px;
+}
+
+.reg-text a {
+    color: rgba(255, 191, 107, 0.75);
+    text-decoration: none;
+    transition: color 0.2s;
+
+}
+
+.reg-text a:hover {
+    color: rgb(253, 200, 132);
+}
+
+/*---- Email and Password Inputs ----*/
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 19px;
+}
+
+.field {
+    text-align: left;
+    padding: 2px 4px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: rgba(194, 214, 249, 0.7);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+input, select {
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid rgb(228, 186, 131);
+    background: rgba(213, 221, 251, 0.147);
+    color: rgb(194, 214, 249);
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    cursor: pointer;
+}
+
+option{
+    color: #2D336B;
+}
+
+input:focus, select:focus {
+    border-color: rgba(255, 191, 107, 0.65);
+    box-shadow: 0 0 0 2px rgba(255, 191, 107, 0.1);
+}
+
+input::placeholder, input[type="date"]::placeholder {
+    letter-spacing: 0.05em;
+    color:rgba(250, 235, 215, 0.44);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(80%) sepia(50%) saturate(500%) hue-rotate(320deg);
+    cursor: pointer;
+}
+
+/*---- Submit Button ----*/
+.submit-btn {
+    margin-top: 18px;
+    margin-bottom: 5px;
+    width: 40%;
+    padding: 7px 12px;
+    background: rgba(255, 191, 107, 0.15);
+    color: rgb(255, 191, 107);
+    border: 1px solid rgba(255, 191, 107, 0.45);
+    border-radius: 8px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    background: rgba(255, 191, 107, 0.25);
+    border-color: rgba(255, 191, 107, 0.7);
+    box-shadow: 0 0 12px rgba(255, 191, 107, 0.15);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/*Status Messages*/
+.auth-error, .auth-sucess {
+    font-size: 13px;
+    min-height: 18px;
+    margin-top: 12px;
+    border-radius: 6px;
+    padding: 0;
+    transition: all 0.2s;
+}
+
+.auth-error:not(:empty) {
+    color: rgba(255, 140, 130, 0.9);
+    background: rgba(180, 60, 60, 0.12);
+    border: 1px solid rgba(255, 140, 130, 0.2);
+    padding: 8px 12px;
+}
+ 
+.auth-success:not(:empty) {
+    color: rgba(130, 220, 170, 0.9);
+    background: rgba(40, 140, 90, 0.12);
+    border: 1px solid rgba(130, 220, 170, 0.2);
+    padding: 8px 12px;
+}
+
+/*---- Footer ----*/
+.auth-footer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: rgba(194, 214, 249, 0.45);
+}
+
+.auth-footer a {
+    color: rgba(255, 191, 107, 0.75);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.auth-footer a:hover {
+    color: rgb(253, 200, 132);
+}
+
+/*---- Divider ----*/
+.divider {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 5px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 191, 107, 0.35);
+}
+
+.divider-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 191, 107, 0.45);
+}
+
+.divider-star {
+    color: rgba(255, 191, 107, 0.75);
+    font-size: 16px;
+    line-height: 1;
+} 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Task 1 - Register Users</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../style/auth.css"/>
+    </head>
+
+    <body>
+        <div class = "auth-screen">
+            <!--Brand Info-->
+            <div class="logo">NAVIRA</div>
+            <div class="reg-text">By continuing, you agree to our <a href>User Agreement</a> and
+            <div class="reg-text"></div>acknowledge that you understand the <a href>Privacy Policy</a>.</div>
+            <!--Email Input-->
+            <div class="inputs">
+                <div class="field">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" placeholder="user@example.com" autocomplete="email"/>
+                </div>
+
+                <!--Password Input-->
+                <div class="field">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="- - - - - - - - - - - - - - " autocomplete="new-password"/>
+                </div>
+            </div>
+            <!--Submit Button-->
+            <button class="submit-btn" id="reg-btn" onclick="handleRegister()">
+                Create Account 
+            </button>
+
+            <!--Message-->
+            <div class="auth-error" id="auth-error"></div>
+            <div class="auth-success" id="auth-success"></div>
+
+            <div class="auth-footer">
+                Already have an account? <a href="login.html">Log in</a>
+            </div>
+
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-dot"></span>
+                <span class="divider-star">✦</span>
+                <span class="divider-dot"></span>
+                <span class="divider-line"></span>
+            </div>
+
+            <script src="register.js"></script>
+        </div>
+    </body>
+</html>
